@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+}
+.navbar a {
+    flex: 1;
+    background-color: aqua;
+
+}
+
+@media (max-width: 2000px) {
+    .navbar {
+        flex-direction: column;
+    }
+}

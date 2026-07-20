@@ -1,0 +1,15 @@
+
+.container {
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: aqua;
+}
+
+.main-content {
+    flex: 5;
+    background-color: black;
+}
