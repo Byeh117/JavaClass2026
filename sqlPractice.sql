@@ -1,12 +1,13 @@
 CREATE TABLE IF NOT EXISTS customers (
-	customer_id INT PRIMARY KEY,
-    customer_name VARCHAR(50)
+	customer_id INT,
+    customer_name VARCHAR(50),
+    PRIMARY KEY (customer_id)
 );
 
 CREATE TABLE orders (
 	order_id INT PRIMARY KEY,
-    customer_id INT,
-    amount DECIMAL(10, 2)
+    amount DECIMAL(10, 2),
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
 INSERT INTO customers VALUES
