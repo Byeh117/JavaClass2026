@@ -10,6 +10,6 @@ SELECT id, COUNT(id) AS n
 FROM accounts GROUP BY id) AS acc_counts
 WHERE n > 0;
 
-SELECT balance FROM accounts
+SELECT account_name FROM accounts
 WHERE balance > (
 SELECT AVG(balance) FROM accounts);
