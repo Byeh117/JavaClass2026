@@ -8,13 +8,13 @@ form.addEventListener("submit", function(event) {
     const password = document.querySelector("#password").value;
 
     if(username === "admin" && password === "password123"){
-        message.computedStyleMap.color = "green";
+        message.style.color = "green";
         message.textContent = "Login Successful!";
 
         // redirect to dashboard page:
         // window.location.href = "dashboard.html"
     } else {
-        message.computedStyleMap.color = "red";
+        message.style.color = "crimson";
         message.textContent = "Invalid username or password";
     }
 });
