@@ -1,0 +1,8 @@
+How to make the TypeScript Usable
+
+1. Open the terminal on VSCode (ctrl+`, or ctrl+backtick)
+2. Type npm install typescript and press Enter
+3. Type npx tsc yourLoginFileName.ts
+4. Locate yourLoginFileName.js that should've been generated after running the aforementioned command
+5. Go to your HTML file and replace your original js file with the newly generated JavaScript file
+6. Run your HTML and verify whether the functionality is as expected!
